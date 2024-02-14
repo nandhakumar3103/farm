@@ -19,6 +19,8 @@ import { ProductList2Component } from './product-list2/product-list2.component';
 import { ProductList3Component } from './product-list3/product-list3.component';
 import { NewArrivalComponent } from './new-arrival/new-arrival.component';
 import { FeaturedProductsComponent } from './featured-products/featured-products.component';
+import { FarmerFaceComponent } from './farmer-face/farmer-face.component';
+
 
 
 export const routes: Routes = [
@@ -42,5 +44,7 @@ export const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'new-arrival', component: NewArrivalComponent},
     {path: 'featured-products', component: FeaturedProductsComponent},
+    {path: 'farmer-face', component: FarmerFaceComponent},
+
     { path: 'cart', component:CartComponent }
 ];
