@@ -155,21 +155,25 @@
         border: 0;
         transition: .5s;
         opacity: 0;
+        
     }
 }
 
 .dropdown .dropdown-menu a:hover {
-    background: var(--bs-secondary);
-    color: var(--bs-primary);
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.2);
 }
 
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
-    background: var(--bs-light) !important;
+    background-image: linear-gradient(to right, #FFD194, #D1913C);
+
     border-radius: 10px !important;
     transition: .5s;
     opacity: 1;
+    
+   color: #000;
 }
 
 #searchModal .modal-content {
