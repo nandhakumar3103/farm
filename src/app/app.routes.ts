@@ -20,6 +20,7 @@ import { ProductList3Component } from './product-list3/product-list3.component';
 import { NewArrivalComponent } from './new-arrival/new-arrival.component';
 import { FeaturedProductsComponent } from './featured-products/featured-products.component';
 import { FarmerFaceComponent } from './farmer-face/farmer-face.component';
+import { ProductOrderdDetailComponent } from './product-orderd-detail/product-orderd-detail.component';
 
 
 
@@ -45,6 +46,6 @@ export const routes: Routes = [
     {path: 'new-arrival', component: NewArrivalComponent},
     {path: 'featured-products', component: FeaturedProductsComponent},
     {path: 'farmer-face', component: FarmerFaceComponent},
-
-    { path: 'cart', component:CartComponent }
+    {path: 'product-orderd-detail', component: ProductOrderdDetailComponent},
+    {path: 'cart', component:CartComponent }
 ];

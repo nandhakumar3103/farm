@@ -1,0 +1,50 @@
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+    
+    .gradient-custom-2 {
+    /* fallback for old browsers */
+    background-image: linear-gradient(to right top, #1d1d19, #3a3b23, #585c2d, #778035, #97a53e, #96a53e, #95a63e, #94a63e, #738135, #545d2b, #373c21, #1c1d16);
+    // background-image: linear-gradient(to right top, #a33415, #b65409, #c37500, #cc9600, #ceb800, #d3bb00, #d7bf00, #dcc200, #e5a600, #ea8a00, #ea6c1b, #e54c2d);
+    
+    // /* Chrome 10-25, Safari 5.1-6 */
+    // background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+    
+    // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+    }
+    
+    .bg-indigo {
+        background-image: linear-gradient(to right top, #a33415, #b65409, #c37500, #cc9600, #ceb800, #d3bb00, #d7bf00, #dcc200, #e5a600, #ea8a00, #ea6c1b, #e54c2d);
+        // background-image: linear-gradient(to right top, #11a411, #44b10f, #64be0d, #82cb0e, #9ed712, #9edb23, #9fdf30, #9fe33b, #84df4d, #67d95c, #48d36a, #1bcd77);
+    }
+    @media (min-width: 992px) {
+    .card-registration-2 .bg-indigo {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+    }
+    @media (max-width: 991px) {
+    .card-registration-2 .bg-indigo {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+    }
+    .seller{
+        background: #FF0000;
+background: linear-gradient(to left, #FF0000 0%, #FFFF00 50%, #FF0000 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+    }
