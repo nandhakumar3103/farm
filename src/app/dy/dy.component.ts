@@ -12,15 +12,22 @@ import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 export class dyComponent {
   // TypeScript code
 
-  email: any;
-  pwd: any;
-  name: any;
-  newpwd: any;
-  newemail: any;
-  message() {
-    alert('login Successfully');
-  }
-  reg() {
-    alert('Registered Successfully');
-  }
+ user_email:any;
+ user_name:any;
+ password:any;
+ Register:FormGroup | any;
+ constructor(private http:HttpClient){}
+ register(){
+  alert('Registerd Successfully......!')
+  let bodyData={
+    user_name:this.user_name,
+    user_email:this.user_email,
+    password:this.password,
+  };
+  this.http.post('http://localhost:8080/users/user_register',bodyData)
+  .subscribe((result:any)=>{
+    console.log(result);
+  });
+ }
+
 }

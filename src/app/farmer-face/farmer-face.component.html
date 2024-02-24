@@ -11,12 +11,13 @@
                   <h3 class="fw-normal mb-5" style="color: #ad2b2b;">Product Detail</h3>
 
                   <div class="mb-4 pb-2">
-                     <label class="form-label">Product Category -> </label>
-                    <select class="select">
+                     <label class="form-label" >Product Category -> </label>
+                    <select class="select"  [(ngModel)]="category"
+                    [ngModelOptions]="{standalone: true}" >
                       <option value="1">category</option>
-                      <option value="2">Vegetable</option>
-                      <option value="3">Seeds</option>
-                      <option value="4">Fertilizer</option>
+                      <option value="2">vegetable</option>
+                      <option value="3">seeds</option>
+                      <option value="4">fertilizer</option>
                     </select>
                   </div>
 
@@ -24,8 +25,9 @@
                     <div class="col-md-6 mb-4 pb-2">
 
                       <div class="form-outline">
-                        <input type="text" id="form3Examplev2" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Examplev2"> Name</label>
+                        <input type="text" id="form3Examplev2" class="form-control form-control-lg" [(ngModel)]="farmerName"
+                        [ngModelOptions]="{standalone: true}" />
+                        <label class="form-label" for="form3Examplev2" > Name</label>
                       </div>
 
                     </div>
@@ -44,16 +46,19 @@
                   <div class="mb-4 pb-2">
                     
                     <div class="form-outline">
-                      <input type="text" id="form3Examplev2" class="form-control form-control-lg" />
+                      <input type="text" id="form3Examplev2" class="form-control form-control-lg" [(ngModel)]="productName"
+                      [ngModelOptions]="{standalone: true}" />
                       <label class="form-label" for="form3Examplev2">Product-Name</label>
                     </div>
                     <div class="form-outline">
-                      <input type="text" id="form3Examplev4" class="form-control form-control-lg" />
+                      <input type="text" id="form3Examplev4" class="form-control form-control-lg"[(ngModel)]="productDetails"
+                      [ngModelOptions]="{standalone: true}"  />
                       <label class="form-label" for="form3Examplev4">Product-Details</label>
                     </div>
                   </div>
                    <div class="mb-4 pb-2"> <label class="form-label">Product Quantity -> </label>
-                    <select class="select">
+                    <select class="select" [(ngModel)]="productQuantity"
+                    [ngModelOptions]="{standalone: true}">
                       <option value="1">Quantity</option>
                       <option value="2">2KG - 5KG</option>
                       <option value="3">5KG - 10KG</option>
@@ -94,14 +99,16 @@
 
                   <div class="mb-4 pb-2">
                     <div class="form-outline form-white">
-                      <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                      <input type="text" id="form3Examplea2" class="form-control form-control-lg" [(ngModel)]="address"
+                      [ngModelOptions]="{standalone: true}"  />
                       <label class="form-label" for="form3Examplea2">Address</label>
                     </div>
                   </div>
 
                   <div class="mb-4 pb-2">
                     <div class="form-outline form-white">
-                      <input type="text" id="form3Examplea3" class="form-control form-control-lg" />
+                      <input type="text" id="form3Examplea3" class="form-control form-control-lg" [(ngModel)]="pincode"
+                      [ngModelOptions]="{standalone: true}"  />
                       <label class="form-label" for="form3Examplea3">Pincode</label>
                     </div>
                   </div>
@@ -110,7 +117,8 @@
                     <div class="col-md-5 mb-4 pb-2">
 
                       <div class="form-outline form-white">
-                        <input type="text" id="form3Examplea4" class="form-control form-control-lg" />
+                        <input type="text" id="form3Examplea4" class="form-control form-control-lg" [(ngModel)]="mobileNo"
+                        [ngModelOptions]="{standalone: true}" />
                         <label class="form-label" for="form3Examplea4">Additional Information </label>
                       </div>
 
@@ -118,7 +126,8 @@
                     <div class="col-md-7 mb-4 pb-2">
 
                       <div class="form-outline form-white">
-                        <input type="text" id="form3Examplea5" class="form-control form-control-lg" />
+                        <input type="text" id="form3Examplea5" class="form-control form-control-lg" [(ngModel)]="altertiveMobileNo"
+                        [ngModelOptions]="{standalone: true}" />
                         <label class="form-label" for="form3Examplea5">Phone-Number</label>
                       </div>
 
@@ -153,7 +162,8 @@
 
                   <div class="mb-4">
                     <div class="form-outline form-white">
-                      <input type="text" id="form3Examplea9" class="form-control form-control-lg" />
+                      <input type="text" id="form3Examplea9" class="form-control form-control-lg" [(ngModel)]="email"
+                      [ngModelOptions]="{standalone: true}" />
                       <label class="form-label" for="form3Examplea9">Your Email</label>
                     </div>
                   </div>
@@ -167,7 +177,7 @@
                   </div> -->
 
                   <button type="button" class="btn btn-light btn-lg"
-                    data-mdb-ripple-color="dark">Sell product</button>
+                data-mdb-ripple-color="dark" (click)="sell_product()">Sell product</button>
                     
 
                 </div>
