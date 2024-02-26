@@ -26,6 +26,7 @@ export class FarmerFaceComponent {
     alert('Are you sure post the product details......!')
     let bodyData={
       farmerName:this.farmerName,
+      productName:this.productName,
       category:this.category,
       productDetails:this.productDetails,
       productQuantity:this.productQuantity,
@@ -35,6 +36,8 @@ export class FarmerFaceComponent {
       altertiveMobileNo:this.altertiveMobileNo,
       email:this.email,
     };
+    console.log(bodyData);
+    
     this.http.post('http://localhost:8080/farmer/addProducts',bodyData)
     .subscribe((result:any)=>{
       console.log(result);

@@ -1,17 +1,34 @@
 <app-nav-bar></app-nav-bar>
+<!-- <section>
+  <div class="text-center mx-5 prolist-text">
+    <h1>Vegetables</h1>
+  </div>
+  <div class="container">
+    @for (prod of products; track prod.id) {
+    <h2>name:{{ prod!.product_name }}</h2>
+    <h3>price:{{ prod!.our_price }}</h3>
+    <h1>m.price:{{ prod!.market_price }}</h1>
+    <h1>solgan:{{ prod!.slogan }}</h1>
+    }
+    <br />
+  </div>
+</section> -->
 
-
-<div class=" text-center  mx-5 prolist-text"><h1>Vegetables</h1></div>
 <!------------------------------------------set1------------------------------------------------>
 <section class=" shadow-5 set1">
 <div class="row justify-content-center mb-3 mx-5  ">
+  <div class="text-center mx-5 prolist-text">
+    <h1>Vegetables</h1>
+  </div>
     <div class="col-md-12 ">
+      @for (prod of products; track prod.id) {
       <div class="card  border rounded-3">
         <div class="card-body">
+         
           <div class="row g-0">
-            
+           
             <div class="col-xl-6 col-md-5 col-sm-7 fw-400 ">
-              <h5 >Onion</h5>
+              <h5 >{{ prod!.product_name }}</h5>
               <div class="d-flex flex-row">
                 <div class="text-warning mb-1 me-2">
                   <i class="fa fa-star"></i>
@@ -27,21 +44,18 @@
               </div>
 
               <p class="text mb-4 mb-md-0">
-                  Savor the Finest Onions at GrowersGoods. From field to doorstep, our premium onions<br> bring farm-fresh goodness to your kitchen.Elevate your dishes with quality that speaks in <br>every slice.
+                {{ prod!.slogan }}
               </p>
             </div>
             <div class="col-xl-3 col-md-3 col-sm-5">
               <div class="d-flex flex-row align-items-center mb-1">
-                <h4 class="mb-1 me-1">34,50</h4>
-                <span class="text-danger"><s>49.99</s></span>
+                <h4 class="mb-1 me-1">{{ prod!.our_price }}</h4>
+                <span class="text-danger"><s>{{ prod!.market_price }}</s></span>
               </div>
               <h6 class="text-warning">Paid shipping</h6>
               <div class="mt-4">
-                <a href="product-detail5"><button class="btn btn-primary shadow-0" type="button">Buy this</button></a>
+                <a href="product-detail1/{{prod!.id}}"><button class="btn btn-primary shadow-0" type="button">Buy this</button></a>
                 <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg px-1"></i></a>
-               
-                
-
             </div>
             </div>
             <div class="col-xl-3 col-md-4 d-inline-block ">
@@ -54,12 +68,18 @@
                   </a>
                 </div>
               </div>
+            <br>
+            
           </div>
+        
         </div>
       </div>
+      <br>
+    }
     </div>
   </div>
-
+</section>
+<!-- 
   <div class="row justify-content-center mb-3 mx-5">
     <div class="col-md-12">
       <div class="card shadow-0 border rounded-3">
@@ -110,10 +130,10 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-  <!---------------------------------------set2----------------------------------------------------------->
-  <section class="set2">
+  </div> -->
+
+<!---------------------------------------set2----------------------------------------------------------->
+<section class="set2">
   <div class="row justify-content-center mb-3 mx-5">
     <div class="col-md-12">
       <div class="card shadow-0 border rounded-3">
@@ -223,7 +243,7 @@
     </div>
   </div>
 </section>
-  <!------------------------------------------set3------------------------------------------------>
+<!------------------------------------------set3------------------------------------------------>
 <!-- <section class="set1">
     <div class="row justify-content-center mb-3 mx-5">
         <div class="col-md-12">
@@ -334,8 +354,8 @@
         </div>
       </div>
     </section> -->
-      <!---------------------------------------set4----------------------------------------------------------->
-      <!-- <section class="set2">
+<!---------------------------------------set4----------------------------------------------------------->
+<!-- <section class="set2">
       <div class="row justify-content-center mb-3 mx-5">
         <div class="col-md-12">
           <div class="card shadow-0 border rounded-3">
@@ -445,7 +465,7 @@
         </div>
       </div>
     </section> -->
-    <!-- ----------------------------------------set5---------------------------------------------- -->
+<!-- ----------------------------------------set5---------------------------------------------- -->
 <!-- <section class="set1">
     <div class="row justify-content-center mb-3 mx-5">
         <div class="col-md-12">
@@ -556,8 +576,8 @@
         </div>
       </div>
     </section> -->
-      <!---------------------------------------set6----------------------------------------------------------->
-      <!-- <section class="set2">
+<!---------------------------------------set6----------------------------------------------------------->
+<!-- <section class="set2">
       <div class="row justify-content-center mb-3 mx-5">
         <div class="col-md-12">
           <div class="card shadow-0 border rounded-3">
@@ -667,8 +687,8 @@
         </div>
       </div>
     </section> -->
-      <!------------------------------------------set7------------------------------------------------>
-    <!-- <section class="set1">
+<!------------------------------------------set7------------------------------------------------>
+<!-- <section class="set1">
         <div class="row justify-content-center mb-3 mx-5">
             <div class="col-md-12">
               <div class="card shadow-0 border rounded-3">
@@ -778,8 +798,8 @@
             </div>
           </div>
         </section> -->
-          <!---------------------------------------set8----------------------------------------------------------->
-          <!-- <section class="set2">
+<!---------------------------------------set8----------------------------------------------------------->
+<!-- <section class="set2">
           <div class="row justify-content-center mb-3 mx-5">
             <div class="col-md-12">
               <div class="card shadow-0 border rounded-3">
@@ -890,8 +910,4 @@
           </div>
         </section> -->
 
-
-
-
-
-        <app-footer></app-footer>
+<app-footer></app-footer>

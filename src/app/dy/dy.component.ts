@@ -24,6 +24,8 @@ export class dyComponent {
     user_email:this.user_email,
     password:this.password,
   };
+  // console.log(bodyData);
+  
   this.http.post('http://localhost:8080/users/user_register',bodyData)
   .subscribe((result:any)=>{
     console.log(result);
