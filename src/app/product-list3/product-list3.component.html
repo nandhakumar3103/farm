@@ -6,12 +6,13 @@
 <section class="set1">
 <div class="row justify-content-center mb-3 mx-5">
     <div class="col-md-12">
+      @for (prod of products; track prod.id) {
       <div class="card shadow-0 border rounded-3">
         <div class="card-body">
           <div class="row g-0">
             
             <div class="col-xl-6 col-md-5 col-sm-7">
-              <h5>Cow Fertilizer</h5>
+              <h5>{{ prod!.product_name }}</h5>
               <div class="d-flex flex-row">
                 <div class="text-warning mb-1 me-2">
                   <i class="fa fa-star"></i>
@@ -20,25 +21,24 @@
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                   <span class="ms-1">
-                    3
+                    {{ prod!.ratings }}
                   </span>
                 </div>
                 <span class="text-muted">73 orders</span>
               </div>
 
               <p class="text mb-4 mb-md-0">
-                Nourishing Earth naturally, our cow fertilizer is the root of sustainable growth. From the farm to your garden, 
-                embrace the power of organic richness. Cultivate prosperity with every nutrient-packed drop!
+                {{ prod!.slogan }}
               </p>
             </div>
             <div class="col-xl-3 col-md-3 col-sm-5">
               <div class="d-flex flex-row align-items-center mb-1">
-                <h4 class="mb-1 me-1">$34,50</h4>
-                <span class="text-danger"><s>$49.99</s></span>
+                <h4 class="mb-1 me-1">{{ prod!.our_price }}</h4>
+                <span class="text-danger"><s>{{ prod!.market_price }}</s></span>
               </div>
               <h6 class="text-warning">Paid shipping</h6>
               <div class="mt-4">
-                <button class="btn btn-primary shadow-0" type="button">Buy this</button>
+               <a href="product-detail3/{{prod!.id}}"> <button class="btn btn-primary shadow-0" type="button">Buy this</button></a>
                 <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg px-1"></i></a>
                
                 
@@ -58,10 +58,12 @@
           </div>
         </div>
       </div>
+      <br>
+    }
     </div>
   </div>
 
-  <div class="row justify-content-center mb-3 mx-5">
+  <!-- <div class="row justify-content-center mb-3 mx-5">
     <div class="col-md-12">
       <div class="card shadow-0 border rounded-3">
         <div class="card-body">
@@ -111,10 +113,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </section>
   <!---------------------------------------set2----------------------------------------------------------->
-  <section class="set2">
+  <!-- <section class="set2">
   <div class="row justify-content-center mb-3 mx-5">
     <div class="col-md-12">
       <div class="card shadow-0 border rounded-3">
@@ -172,7 +174,7 @@
     </div>
   </div>
 
-  </section>
+  </section> -->
   
 
 

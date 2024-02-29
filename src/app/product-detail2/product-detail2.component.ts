@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
+import { GrowersgoodsService } from '../growersgoods.service';
+import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-product-detail2',
@@ -10,5 +13,24 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
   styleUrl: './product-detail2.component.scss'
 })
 export class ProductDetail2Component {
+  id: any;
+  products: any;
+  // imageUrl = 'http://44.211.166.253/';
+  prod: any;
 
+  constructor(
+    private api: GrowersgoodsService,
+    private route: ActivatedRoute,
+    private http:HttpClient
+  ) {}
+
+  ngOnInit(): void {
+    this.id = this.route.snapshot.paramMap.get('id');
+    this.api.singleseed_product(this.id).subscribe((res: any) => {
+      this.products = res.message;
+    });
+  }
+  payment(){
+    alert('Redirecting to payment');
+  }
 }

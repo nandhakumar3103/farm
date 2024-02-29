@@ -23,6 +23,8 @@
  
  <div class="container-fluid py-5 mt-5">
      <div class="container py-5">
+        @for (prod of products; track prod.name) {
+ 
          <div class="row g-4 mb-5">
              <div class="col-lg-8 col-xl-9">
                  <div class="row g-4">
@@ -34,9 +36,9 @@
                          </div>
                      </div>
                      <div class="col-lg-6">
-                         <h4 class="fw-bold mb-3">Pumpkin</h4>
-                         <p class="mb-3">Category: Vegetables</p>
-                         <h5 class="fw-bold mb-3">40 &#8377;</h5>
+                         <h4 class="fw-bold mb-3">{{prod?.product_name}}</h4>
+                         <p class="mb-3">Category: Fertilizer</p>
+                         <h5 class="fw-bold mb-3">{{prod?.our_price}} &#8377;</h5>
                          <div class="d-flex mb-4">
                              <i class="fa fa-star text-secondary"></i>
                              <i class="fa fa-star text-secondary"></i>
@@ -44,10 +46,9 @@
                              <i class="fa fa-star text-secondary"></i>
                              <i class="fa fa-star"></i>
                          </div>
-                         <p class="mb-4">Pumpkin Perfection, Delivered to Your Door. GrowersGoods sources the finest pumpkins for your table.
-                              From pies to soups, savor the freshness. Elevate your recipes with our premium pumpkins.</p>
+                         <p class="mb-4">{{prod?.slogan}}</p>
                          <!-- <p class="mb-4">Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish</p> -->
-                         <div class="input-group quantity mb-5" style="width: 100px;">
+                         <!-- <div class="input-group quantity mb-5" style="width: 100px;">
                              <div class="input-group-btn">
                                  <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
                                      <i class="fa fa-minus"></i>
@@ -59,8 +60,8 @@
                                      <i class="fa fa-plus"></i>
                                  </button>
                              </div>
-                         </div>
-                         <a href="#" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                         </div> -->
+                         <a href="product-orderd-detail" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Buy Now</a>
                      </div>
                      <div class="col-lg-12">
                          <nav>
@@ -75,9 +76,8 @@
                          </nav>
                          <div class="tab-content mb-5">
                              <div class="tab-pane active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                                 <p>Harvesting Joy, One Pumpkin at a Time! Explore the goodness of our premium pumpkins at GrowersGoods. From festive pies to hearty stews, let the flavor bloom in every dish.</p>
-                                 <p>Pumpkin Perfection, Delivered to Your Door. GrowersGoods sources the finest pumpkins for your table.
-                                    From pies to soups, savor the freshness. Elevate your recipes with our premium pumpkins.</p>
+                                 <p>{{prod?.slogan}}</p>
+                                 <p>{{prod?.slogan}}</p>
                                  <div class="px-2">
                                      <div class="row g-4">
                                          <div class="col-6">
@@ -287,6 +287,7 @@
                  </div>
              </div>
          </div>
+        }
      </div>
      </div>
  

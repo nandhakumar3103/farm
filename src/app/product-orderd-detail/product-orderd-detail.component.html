@@ -26,71 +26,89 @@
           <div class="row mb-4">
             <div class="col">
               <div class="form-outline">
-                <input type="text" id="form9Example1" class="form-control input-custom" />
+                <input type="text" id="form9Example1" class="form-control input-custom" [(ngModel)]="first_name"
+                [ngModelOptions]="{standalone: true}"/>
                 <label class="form-label" for="form9Example1">First name</label>
               </div>
             </div>
             <div class="col">
               <div class="form-outline">
-                <input type="text" id="form9Example2" class="form-control input-custom" />
+                <input type="text" id="form9Example2" class="form-control input-custom"  [(ngModel)]="last_name"
+                [ngModelOptions]="{standalone: true}" />
                 <label class="form-label" for="form9Example2">Last name</label>
               </div>
             </div>
           </div>
+          <!-- fgdfgdfzgdfzgdfgdfdfgf -->
           <div class="row mb-4">
             <div class="col">
               <div class="form-outline">
-                <input type="text" id="form9Example3" class="form-control input-custom" />
+                <input type="text" id="form9Example3" class="form-control input-custom"   [(ngModel)]="mobile_number"
+                [ngModelOptions]="{standalone: true}"/>
                 <label class="form-label" for="form9Example3">Mobile_number</label>
               </div>
             </div>
             <div class="col">
               <div class="form-outline">
-                <input type="text" id="form9Example4" class="form-control input-custom" />
+                <input type="text" id="form9Example4" class="form-control input-custom"   [(ngModel)]="alternative_number"
+                [ngModelOptions]="{standalone: true}"/>
+                <label class="form-label" for="form9Example4">Alternative_number</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-outline">
+                <input type="text" id="form9Example4" class="form-control input-custom"  [(ngModel)]="product_name"
+                [ngModelOptions]="{standalone: true}" />
                 <label class="form-label" for="form9Example4">Product_Name</label>
               </div>
             </div>
-            <div class="col">
-              <div class="form-outline">
-                <input type="text" id="form9Example4" class="form-control input-custom" />
-                <label class="form-label" for="form9Example4">Set Kilogram</label>
-              </div>
-            </div>
           </div>
+          <!-- srgssdfsfssf? -->
           <div class="row mb-4">
             <div class="col">
               <div class="form-outline">
-                <input type="text" id="form9Example6" class="form-control input-custom" />
-                <label class="form-label" for="form9Example6">Address</label>
+                <input type="text" id="form9Example3" class="form-control input-custom"  [(ngModel)]="kg"
+                [ngModelOptions]="{standalone: true}"/>
+                <label class="form-label" for="form9Example3">Set Kilogram</label>
               </div>
             </div>
             <div class="col">
               <div class="form-outline">
-                <input type="email" id="typeEmail" class="form-control input-custom" />
-                <label class="form-label" for="typeEmail">City</label>
+                <input type="text" id="form9Example4" class="form-control input-custom"  [(ngModel)]="address"
+                [ngModelOptions]="{standalone: true}"/>
+                <label class="form-label" for="form9Example4">Address </label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-outline">
+                <input type="text" id="form9Example4" class="form-control input-custom"  [(ngModel)]="city"
+                [ngModelOptions]="{standalone: true}"/>
+                <label class="form-label" for="form9Example4">City</label>
               </div>
             </div>
           </div>
+          <!-- dafsgmdfghgf -->
           <div class="row mb-4">
             <div class="col">
               <div class="form-outline">
-                <input type="text" id="form9Example6" class="form-control input-custom" />
+                <input type="email" id="form9Example6" class="form-control input-custom"  [(ngModel)]="email"
+                [ngModelOptions]="{standalone: true}"/>
                 <label class="form-label" for="form9Example6">Email</label>
               </div>
             </div>
             <div class="col">
               <div class="form-outline">
-                <input type="email" id="typeEmail" class="form-control input-custom" />
+                <input type="number" id="typeEmail" class="form-control input-custom"  [(ngModel)]="pincode"
+                [ngModelOptions]="{standalone: true}" />
                 <label class="form-label" for="typeEmail">Pincode</label>
               </div>
             </div>
-            
           </div>
           
 
           <div class="float-end ">
             <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-rounded"
+            <button type="submit" (click)="placeorder()" class="btn btn-primary btn-rounded"
               style="background-color: #0062CC ;">Place order</button>
           </div>
 

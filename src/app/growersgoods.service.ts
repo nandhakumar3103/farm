@@ -8,9 +8,21 @@ import { Observable } from 'rxjs';
 export class GrowersgoodsService {
   constructor(private http:HttpClient) { }
   private apiUrl='http://localhost:8080/';
-  single_product(id:any){
+  singleveg_product(id:any){
     return this.http.get<any[]>(`http://localhost:8080/category/vegetables/${id}`
     );
 
   }
+
+  singleseed_product(id:any){
+    return this.http.get<any[]>(`http://localhost:8080/category/seeds/${id}`
+    );
+
+  }
+  singlefertilizer_product(id:any){
+    return this.http.get<any[]>(`http://localhost:8080/category/fertilizer/${id}`
+    );
+
+  }
+
 }

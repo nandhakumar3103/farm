@@ -26,7 +26,7 @@ export class ProductDetail1Component {
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
-    this.api.single_product(this.id).subscribe((res: any) => {
+    this.api.singleveg_product(this.id).subscribe((res: any) => {
       this.products = res.message;
     });
   }
