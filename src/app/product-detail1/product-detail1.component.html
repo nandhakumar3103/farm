@@ -50,10 +50,10 @@
                             <i class="fa fa-star"></i>
                         </div>
                         <p class="mb-4">{{prod?.slogan}}</p>
-                        <p class="mb-4">{{prod?.slogan}}</p>
+                        <!-- <p class="mb-4">{{prod?.slogan1}}</p> -->
                         
                         <a href="product-orderd-detail" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
-                           <button class="buy" (click)="payment()"> <i class="fa fa-shopping-bag me-2 text-primary"></i> Buy Now</button></a>
+                           <button class="buy" (click)="payment(prod?.product_name, prod?.our_price)"> <i class="fa fa-shopping-bag me-2 text-primary"></i> Buy Now</button></a>
                     </div>
 
 
@@ -71,7 +71,7 @@
                         <div class="tab-content mb-5">
                             <div class="tab-pane active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
                                 <p>{{prod?.slogan}} </p>
-                                <p>{{prod?.slogan}}</p>
+                                <p>{{prod?.slogan1}}</p>
                                 <div class="px-2">
                                     <div class="row g-4">
                                         <div class="col-6">

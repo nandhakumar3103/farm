@@ -1,5 +1,6 @@
 <div class="body">
 <div class="row  mx-3 gradient-custom" style="margin-top:25px ;">
+ 
   <div class="col-md-3 " >
     <div style="margin-top: 50px; margin-left: 10px;" class="text-center">
       <i id="animationDemo" data-mdb-animation="slide-right" data-mdb-toggle="animation"
@@ -55,13 +56,15 @@
                 <label class="form-label" for="form9Example4">Alternative_number</label>
               </div>
             </div>
+            <!-- @for (prod of products; track this.name) { -->
             <div class="col">
               <div class="form-outline">
-                <input type="text" id="form9Example4" class="form-control input-custom"  [(ngModel)]="product_name"
-                [ngModelOptions]="{standalone: true}" />
-                <label class="form-label" for="form9Example4">Product_Name</label>
+                <input type="text" id="form9Example4" class="form-control input-custom" placeholder="{{this.name}}"  [(ngModel)]="product_name"
+                [ngModelOptions]="{standalone: true}"  readonly/>
+                <label class="form-label" for="form9Example4">Product_Name </label>
               </div>
             </div>
+          
           </div>
           <!-- srgssdfsfssf? -->
           <div class="row mb-4">
@@ -116,5 +119,6 @@
       </div>
     </div>
   </div>
+
 </div>
 </div>

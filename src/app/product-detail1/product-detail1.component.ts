@@ -5,6 +5,7 @@ import { GrowersgoodsService } from '../growersgoods.service';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-product-detail1',
   standalone: true,
@@ -30,7 +31,9 @@ export class ProductDetail1Component {
       this.products = res.message;
     });
   }
-  payment(){
+  payment(pro_name: any, price:any){
+    localStorage.setItem("pro_name", pro_name);
+    localStorage.setItem("pro_price", price);
     alert('Redirecting to payment');
   }
 

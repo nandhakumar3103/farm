@@ -15,6 +15,7 @@ export class ProductList1Component {
   product_name:any;
   id: any;
   products: any;
+  imageUrl='http://localhost:8080/';
   
   constructor(private http: HttpClient, private api: GrowersgoodsService) { }
   ngOnInit(): void {

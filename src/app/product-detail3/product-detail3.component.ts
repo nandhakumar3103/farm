@@ -30,7 +30,9 @@ export class ProductDetail3Component {
       this.products = res.message;
     });
   }
-  payment(){
+  payment(pro_name: any, price:any){
+    localStorage.setItem("pro_name", pro_name);
+    localStorage.setItem("pro_price", price);
     alert('Redirecting to payment');
   }
 }
