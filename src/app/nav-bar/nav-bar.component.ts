@@ -1,15 +1,25 @@
-import { Component } from '@angular/core';
-import { ProductList1Component } from '../product-list1/product-list1.component';
+import { isPlatformBrowser } from '@angular/common';
+import { GrowersgoodsService } from '../growersgoods.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [],
+  imports: [ReactiveFormsModule, FormsModule, HttpClientModule],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
-  searching(){
-    console.log((<HTMLInputElement>document!.querySelector("#search"))!.value)
+  user_name: any;
+  user_email: any;
+  constructor(@Inject(PLATFORM_ID) private platformId: Object){}
+  ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.user_name = localStorage.getItem("user_name")
+      this.user_email = localStorage.getItem("user_email")
+    }
   }
+
 }

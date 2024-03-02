@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
     <!-- Container wrapper -->
     <div class="container-fluid">
-  <div class="  title">GrowersGoods</div>
+      <a class="navbar-brand" href="#"><img src="../../assets/home/ns_logo.png" class="logo" alt="Logo"></a>
       <!-- Collapsible wrapper -->
       <div
         class="collapse navbar-collapse justify-content-center"
@@ -25,9 +25,13 @@
             -->
             <!-- Icon login -->
             <li class="nav-item me-3 me-lg-0 ">
-                <a class="nav-link" href="#">
-                    <h3 class="title">Login <i class="fas fa-user"></i></h3>
-                 </a>
+              @if (user_name) {
+                <h3 class="title">{{user_name}} <i class="fas fa-user"></i></h3>
+              } @else {
+                <a class="nav-link" href="login">
+                  <h3 class="title">Login <i class="fas fa-user"></i></h3>
+                </a>
+              }
               
     
            

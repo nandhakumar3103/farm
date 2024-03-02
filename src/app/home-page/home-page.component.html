@@ -11,7 +11,7 @@
           <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
               <!-- Container wrapper -->
               <div class="container-fluid">
-            <div class="  title">GrowersGoods</div>
+                <a class="navbar-brand" href="#"><img src="../../assets/home/ns_logo.png" class="logo" alt="Logo"></a>
                 <!-- Collapsible wrapper -->
                 <div
                   class="collapse navbar-collapse justify-content-center"
@@ -34,12 +34,13 @@
                      
                       <!-- Icon login -->
                       <li class="nav-item me-3 me-lg-0 ">
+                        @if (user_name) {
+                          <h3 class="title">{{user_name}} <i class="fas fa-user"></i></h3>
+                        } @else {
                           <a class="nav-link" href="login">
-                              <h3 class="title">Login <i class="fas fa-user"></i></h3>
-                           </a>
-                        
-              
-                     
+                            <h3 class="title">Login <i class="fas fa-user"></i></h3>
+                          </a>
+                        }
                       </li>
                     </ul>
                   </div>
@@ -142,7 +143,7 @@
           <div class="card-body">
             <h5 class="card-title">Pumpkin</h5>
             <p class="card-text"></p>
-            <a href="product-detail3" class="btn btn-primary click-btn">Click</a>
+            <a href="product-detail1/2" class="btn btn-primary click-btn">Click</a>
             <div class="details">
               <div class="center">
                 <h1>GrowersGoods<br><span>Pumpkin</span></h1>
@@ -171,7 +172,7 @@
           <div class="card-body">
             <h5 class="card-title">Cauliflower</h5>
             <p class="card-text"></p>
-            <a href="product-detail1" class="btn btn-primary click-btn">Click</a>
+            <a href="product-detail1/3" class="btn btn-primary click-btn">Click</a>
             <div class="details">
               <div class="center">
                 <h1>GrowersGoods<br><span>Cauliflower</span></h1>
@@ -199,7 +200,7 @@
           <div class="card-body">
             <h5 class="card-title">Carrot</h5>
             <p class="card-text"></p>
-            <a href="product-detail4" class="btn btn-primary click-btn">Click</a>
+            <a href="product-detail1/4" class="btn btn-primary click-btn">Click</a>
             <div class="details">
               <div class="center">
                 <h1>GrowersGoods<br><span>Carrot</span></h1>
@@ -227,7 +228,7 @@
           <div class="card-body">
             <h5 class="card-title">Onion</h5>
             <p class="card-text"></p>
-            <a href="product-detail5" class="btn btn-primary click-btn">Click</a>
+            <a href="product-detail1/5" class="btn btn-primary click-btn">Click</a>
             <div class="details">
               <div class="center">
                 <h1>GrowersGoods<br><span>Onion</span></h1>
@@ -255,7 +256,7 @@
           <div class="card-body">
             <h5 class="card-title">Beetroot</h5>
             <p class="card-text"></p>
-            <a href="product-detail6" class="btn btn-primary click-btn">Click</a>
+            <a href="product-detail1/6" class="btn btn-primary click-btn">Click</a>
             <div class="details">
               <div class="center">
                 <h1>GrowersGoods<br><span>Beetrootr</span></h1>
@@ -280,222 +281,476 @@
 
 <div class="text-center align-items-center p-4"><a href="product-list1" class="text-decoration-none"> <button  class="button-92" role="button">See More!!! </button></a> </div>
 <!-------------------------------------------------------------fruits long image----------------------------------------------->
-<section class="longone">
-  <div class="container-fluid  my-4">
-  
-    <img src="assets\home\1.jpg" class="w-100 seeds" alt="...">
-
-  </div>
-</section>
+<app-banner-veg></app-banner-veg>
 <!-----------------------------------------------products1 title "SEEDS"---------------------------------------------------------------------------------->
 <div class=" text-center  mx-5 prolist-text"><h1>SEEDS</h1></div>
 <!-------------------------------------------------------------products of seeds------------------------------------------------>
 
 <section class="products1">
-  <div class="bg-clr1" >
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+  <!-- <div id="particles-js" > -->
+    <div class="bg-clr" >
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro1.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ladies Finger</h5>
+              <p class="card-text"></p>
+              <a href="product-detail2/1" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Ladies Finger</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+        <!-----------------------------------------------products2----------------------------------------------------->
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro2.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pumpkin</h5>
+              <p class="card-text"></p>
+              <a href="product-detail2/2" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Pumpkin</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+        <!-----------------------------------------------products3----------------------------------------------------->
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro3.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cauliflower</h5>
+              <p class="card-text"></p>
+              <a href="product-detail2/3" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Cauliflower</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+        <!-----------------------------------------------products4----------------------------------------------------->
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro4.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Carrot</h5>
+              <p class="card-text"></p>
+              <a href="product-detail2/4" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Carrot</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+        <!-----------------------------------------------products5----------------------------------------------------->
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro5.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Onion</h5>
+              <p class="card-text"></p>
+              <a href="product-detail2/5" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Onion</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+        <!-----------------------------------------------products6----------------------------------------------------->
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro6.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beetroot</h5>
+              <p class="card-text"></p>
+              <a href="product-detail2/6" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Beetrootr</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  <!-- </div> -->
   </div>
-</div>
-</section>
+  </section>
 <div class="text-center align-items-center p-4"><a href="product-list2" class="text-decoration-none"> <button  class="button-92" role="button">See More!!! </button></a> </div>
 <!-------------------------------------------------------------seeds long img----------------------------------------------->
-<section class="longone ">
-  <div class="container-fluid">
-  
-    <img src="assets\home\2.avif" class=" seeds" alt="...">
-
-  </div>
-</section>
+<app-banner-seed></app-banner-seed>
 
 <!-----------------------------------------------products1 title "fertilizee"---------------------------------------------------------------------------------->
 <div class=" text-center  mx-5 prolist-text "><h1>Fertilizer</h1></div>
 <!-------------------------------------------------------------products of fertilizer----------------------------------->
 <section class="products1">
-  <div class="bg-clr2" >
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+  <!-- <div id="particles-js" > -->
+    <div class="bg-clr" >
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro1.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ladies Finger</h5>
+              <p class="card-text"></p>
+              <a href="product-detail3/1" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Ladies Finger</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+        <!-----------------------------------------------products2----------------------------------------------------->
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro2.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pumpkin</h5>
+              <p class="card-text"></p>
+              <a href="product-detail3/2" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Pumpkin</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+        <!-----------------------------------------------products3----------------------------------------------------->
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro3.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cauliflower</h5>
+              <p class="card-text"></p>
+              <a href="product-detail3/3" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Cauliflower</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+        <!-----------------------------------------------products4----------------------------------------------------->
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro4.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Carrot</h5>
+              <p class="card-text"></p>
+              <a href="product-detail3/4" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Carrot</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+        <!-----------------------------------------------products5----------------------------------------------------->
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro5.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Onion</h5>
+              <p class="card-text"></p>
+              <a href="product-detail3/5" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Onion</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mt-5">
-        <div class="card mt-5" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://freepngimg.com/thumb/ladyfinger/42356-1-lady-finger-free-download-png-hd.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Ladies Finger</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Click</a>
+        <!-----------------------------------------------products6----------------------------------------------------->
+        <div class="col-12 col-sm-6 col-md-4 mt-5">
+          <div class="card mt-5" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets\home\pro6.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beetroot</h5>
+              <p class="card-text"></p>
+              <a href="product-detail3/6" class="btn btn-primary click-btn">Click</a>
+              <div class="details">
+                <div class="center">
+                  <h1>GrowersGoods<br><span>Beetrootr</span></h1>
+                  <p>GrowerdGoods veggies: fresh, organic, healthy - nature's wholesome nutrition for you!</p>
+                  <ul>
+                    <li> <a href="" class="text-white "><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="" class="text-white "><i class="fab fa-google"></i></a></li>
+                    <li><a href="" class="text-white "><i class="fab fa-instagram"></i></a></li>
+                    <!-- <li><a href="" class="text-white "><i class="fab fa-linkedin"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  <!-- </div> -->
   </div>
-</div>
-</section>
+  </section>
 <div class="text-center align-items-center p-4"><a href="product-list3" class="text-decoration-none"> <button  class="button-92" role="button">See More!!! </button></a> </div>
 <!-------------------------------------------------------------fertilizer long img----------------------------------->
-<section class="longone ">
-  <div class="container-fluid my-4">
-  
-    <img src="assets\home\3.avif" class="container-fluid  seeds" alt="...">
+<!-- <section class="longone ">
+  <div class="container">
+    <div class="carousel owl-carousel" >
+         <div class="card cards" >
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-17.png" alt="">
+              
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-18.png" alt="asd">
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-19.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-20.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-01.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-02.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-03.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-04.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-05.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-06.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-08.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-09.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-10.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-11.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-12.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-14.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-15.png" alt="">        
+             </div>
+         </div>
+         <div class="card cards">
+             <div class="box">
+                 <img src="https://geniies.com/assets/img/logos/logos-16.png" alt="">        
+             </div>
+         </div>
+     </div>
+    
 
-  </div>
-</section>
 
+
+ </div>
+</section> -->
+<app-banner-fertilizer></app-banner-fertilizer>
 <app-footer></app-footer>

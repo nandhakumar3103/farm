@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
 import { FooterComponent } from '../footer/footer.component';
+import { Router } from '@angular/router';
 import { GrowersgoodsService } from '../growersgoods.service';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
@@ -22,7 +24,9 @@ export class ProductDetail1Component {
   constructor(
     private api: GrowersgoodsService,
     private route: ActivatedRoute,
-    private http:HttpClient
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private http:HttpClient,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -32,9 +36,15 @@ export class ProductDetail1Component {
     });
   }
   payment(pro_name: any, price:any){
-    localStorage.setItem("pro_name", pro_name);
-    localStorage.setItem("pro_price", price);
-    alert('Redirecting to payment');
+    if (isPlatformBrowser(this.platformId)) {
+      if(localStorage.getItem("user_name")){
+        localStorage.setItem("pro_name", pro_name);
+        localStorage.setItem("pro_price", price);
+        //alert('Redirecting to payment');
+        this.router.navigate(['/product-orderd-detail'])
+      } else {
+        this.router.navigate(['/login'])
+      }
+    }
   }
-
 }

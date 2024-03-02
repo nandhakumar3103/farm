@@ -9,9 +9,9 @@ import { LoginComponent } from './login/login.component';
 import { ProductDetail2Component } from './product-detail2/product-detail2.component';
 import { ProductDetail3Component } from './product-detail3/product-detail3.component';
 import { ProductDetail4Component } from './product-detail4/product-detail4.component';
-import { ProductDetail5Component } from './product-detail5/product-detail5.component';
-import { ProductDetail6Component } from './product-detail6/product-detail6.component';
-// import { ProductDetail7Component } from './product-detail7/product-detail7.component';
+// import { ProductDetail5Component } from './product-detail5/product-detail5.component';
+// import { ProductDetail6Component } from './product-detail6/product-detail6.component';
+// // import { ProductDetail7Component } from './product-detail7/product-detail7.component';
 // import { ProductDetail8Component } from './product-detail8/product-detail8.component';
 // import { ProductDetail9Component } from './product-detail9/product-detail9.component';
 // import { ProductDetail10Component } from './product-detail10/product-detail10.component';
@@ -22,6 +22,9 @@ import { FeaturedProductsComponent } from './featured-products/featured-products
 import { FarmerFaceComponent } from './farmer-face/farmer-face.component';
 import { ProductOrderdDetailComponent } from './product-orderd-detail/product-orderd-detail.component';
 import { dyComponent } from './dy/dy.component';
+import { BannerVegComponent } from './banner-veg/banner-veg.component';
+import { BannerSeedComponent } from './banner-seed/banner-seed.component';
+import { BannerFertilizerComponent } from './banner-fertilizer/banner-fertilizer.component';
 
 
 
@@ -38,8 +41,8 @@ export const routes: Routes = [
     { path: 'product-detail2/:id', component: ProductDetail2Component },
     { path: 'product-detail3/:id', component: ProductDetail3Component },
     { path: 'product-detail4', component: ProductDetail4Component },
-    { path: 'product-detail5', component: ProductDetail5Component },
-    { path: 'product-detail6', component: ProductDetail6Component },
+    // { path: 'product-detail5', component: ProductDetail5Component },
+    // { path: 'product-detail6', component: ProductDetail6Component },
     // {path: 'product-detail7', component: ProductDetail7Component},
     // {path: 'product-detail8', component: ProductDetail8Component},
     // {path: 'product-detail9', component: ProductDetail9Component},
@@ -49,5 +52,8 @@ export const routes: Routes = [
     { path: 'featured-products', component: FeaturedProductsComponent },
     { path: 'farmer-face', component: FarmerFaceComponent },
     { path: 'product-orderd-detail', component: ProductOrderdDetailComponent },
+    { path: 'banner-veg', component: BannerVegComponent },
+    { path: 'banner-seeds', component: BannerSeedComponent },
+    { path: 'banner-fertilizer', component: BannerFertilizerComponent },
     // {path: 'cart', component:CartComponent }
 ];
