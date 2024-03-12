@@ -15,14 +15,10 @@
     
     .gradient-custom-2 {
     /* fallback for old browsers */
+    background-size: cover !important;
     background-image: linear-gradient(to right top, #1d1d19, #3a3b23, #585c2d, #778035, #97a53e, #96a53e, #95a63e, #94a63e, #738135, #545d2b, #373c21, #1c1d16);
     // background-image: linear-gradient(to right top, #a33415, #b65409, #c37500, #cc9600, #ceb800, #d3bb00, #d7bf00, #dcc200, #e5a600, #ea8a00, #ea6c1b, #e54c2d);
-    
-    // /* Chrome 10-25, Safari 5.1-6 */
-    // background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
-    
-    // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    // background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+
     }
     
     .bg-indigo {

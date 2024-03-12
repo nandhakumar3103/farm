@@ -19,8 +19,7 @@ export class ProductList1Component {
   
   constructor(private http: HttpClient, private api: GrowersgoodsService) { }
   ngOnInit(): void {
-    this.http.get<any[]>('http://localhost:8080/category/vegetables')
-      .subscribe((prod: any) => {
+    this.http.get<any[]>('http://localhost:8080/category/vegetables').subscribe((prod: any) => {
         this.products = prod.message;
         console.log(prod.message);
       });

@@ -16,7 +16,7 @@ import { BannerFertilizerComponent } from '../banner-fertilizer/banner-fertilize
 export class HomePageComponent {
   user_name: any;
   user_email: any;
-  constructor(@Inject(PLATFORM_ID) private platformId: Object){}
+  constructor( @Inject(PLATFORM_ID) private platformId: Object){}
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       this.user_name = localStorage.getItem("user_name")

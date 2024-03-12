@@ -13,7 +13,7 @@
             @if(prod.id%2==0){
               <div class="col-xl-3 col-md-4 d-inline-block ">
                 <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
-                  <img src="assets/product-list3/cowferti.png" class="w-100  " />
+                  <img src="{{prod!.image}}" class="w-100 vanakkam " />
                   <a href="#!">
                     <div class="hover-overlay">
                       <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
@@ -34,17 +34,16 @@
                       {{ prod!.ratings }}
                     </span>
                   </div>
-                  <span class="text-muted">73 orders</span>
+                  <span class="text-muted">Stock : {{prod!.in_stock}}</span>
                 </div>
-  
                 <p class="text mb-4 mb-md-0">
                   {{ prod!.slogan }}
                 </p>
               </div>
               <div class="col-xl-3 col-md-3 col-sm-5">
                 <div class="d-flex flex-row align-items-center mb-1">
-                  <h4 class="mb-1 me-1">{{ prod!.our_price }}</h4>
-                  <span class="text-danger"><s>{{ prod!.market_price }}</s></span>
+                  <h4 class="mb-1 me-1">{{ prod!.our_price }}&#8377;</h4>
+                  <span class="text-danger"><s>{{ prod!.market_price }}&#8377;</s></span>
                 </div>
                 <h6 class="text-warning">Paid shipping</h6>
                 <div class="mt-4">
@@ -70,7 +69,7 @@
                       {{ prod!.ratings }}
                     </span>
                   </div>
-                  <span class="text-muted">73 orders</span>
+                  <span class="text-muted">Stock : {{prod!.in_stock}}</span>
                 </div>
   
                 <p class="text mb-4 mb-md-0">
@@ -79,8 +78,8 @@
               </div>
               <div class="col-xl-3 col-md-3 col-sm-5">
                 <div class="d-flex flex-row align-items-center mb-1">
-                  <h4 class="mb-1 me-1">{{ prod!.our_price }}</h4>
-                  <span class="text-danger"><s>{{ prod!.market_price }}</s></span>
+                  <h4 class="mb-1 me-1">{{ prod!.our_price }}&#8377;</h4>
+                  <span class="text-danger"><s>{{ prod!.market_price }}&#8377;</s></span>
                 </div>
                 <h6 class="text-warning">Paid shipping</h6>
                 <div class="mt-4">
@@ -93,7 +92,7 @@
               </div>
               <div class="col-xl-3 col-md-4 d-inline-block ">
                   <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
-                    <img src="assets/product-list3/cowferti.png" class="w-100  " />
+                    <img src="{{prod!.image}}" alt="under the process" class="w-100  vanakkam" />
                     <a href="#!">
                       <div class="hover-overlay">
                         <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>

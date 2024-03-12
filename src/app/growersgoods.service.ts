@@ -12,6 +12,7 @@ export class GrowersgoodsService {
   growersgoodsService: any;
   constructor(private http: HttpClient) { }
   private apiUrl = 'http://localhost:8080/';
+  
   singleveg_product(id: any) {
     return this.http.get<any[]>(`http://localhost:8080/category/vegetables/${id}`
     );

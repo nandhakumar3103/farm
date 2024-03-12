@@ -7,14 +7,15 @@ body {
   background-color: #f9f9f9;
 }
 
-h1 {
-  text-align: center;
-  margin: 1.5em;
-}
+// h1 {
+//   text-align: center;
+//   margin: 1.5em;
+// }
 
 img {
   width: 35%;
-  border-radius: 50%;
+  background-size: cover;
+  // border-radius: 50%;
 }
 
 .container {
@@ -36,11 +37,13 @@ img {
   flex-direction: column;
   position: relative;
   width: 300px;
+  height: 100px;
   background: #fff;
   margin: 1em;
   padding: 0.5em;
   border-radius: 10px;
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+  background-size: cover;
 }
 
 @media only screen and (max-width: 768px) {
@@ -82,7 +85,7 @@ img {
   height: 100%;
 }
 
-.faders .right,
+
 .faders .left {
   background: linear-gradient(
     to right,
@@ -93,10 +96,15 @@ img {
   height: 100%;
   position: absolute;
   z-index: 200;
+  margin-left: -12px; 
 }
 
-.right {
+.faders .right {
   right: 0;
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
   background: linear-gradient(
     to left,
     rgba(245, 245, 245, 1) 0%,

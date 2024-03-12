@@ -27,8 +27,12 @@ export class LoginComponent {
     };
     this.http.post('http://localhost:8080/users/user_login', bodyData).subscribe({
       next: (result: any) => {
+        console.log(bodyData)
+        
         this.jwtToken = result.token;
+
         if (this.jwtToken) {
+          // console.log(result.user_name)
           localStorage.setItem('user_name', result.data.user_name)
           localStorage.setItem('user_email', result.data.user_email)
           this.Tokenstatus = 'success';
